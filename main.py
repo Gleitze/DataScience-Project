@@ -13,7 +13,7 @@ google_Data.info()
 google_Data.describe()
 print("Missing Value", google_Data.isnull().sum().sum())
 plt.show()
-#
+
 # #company
 Companies = google_Data["Company"].value_counts().values.tolist()
 sea.catplot(x="Company", data=Companies, kind="count")
